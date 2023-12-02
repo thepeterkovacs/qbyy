@@ -1,0 +1,25 @@
+/** @type {import('prettier').Config} */
+module.exports = {
+	arrowParens: "always",
+	bracketSameLine: true,
+	bracketSpacing: true,
+	endOfLine: "crlf",
+	importOrder: [
+		"^_trpc/(.*)$",
+		"^api/(.*)$|^routers/(.*)$|^database/(.*)$",
+		"^middlewares/(.*)$",
+		"^assets/(.*)$|^auth/(.*)$|^classes/(.*)$|^hooks/(.*)$|^i18n/(.*)$|^utils/(.*)$",
+		"^providers/(.*)$|^shared/(.*)$|^tools/(.*)$|^ui/(.*)$",
+		"^styles/(.*)$",
+	],
+	importOrderSeparation: true,
+	importOrderSortSpecifiers: true,
+	plugins: ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+	printWidth: 100,
+	semi: false,
+	singleQuote: false,
+	tabWidth: 4,
+	tailwindFunctions: ["cn"],
+	trailingComma: "all",
+	useTabs: true,
+}

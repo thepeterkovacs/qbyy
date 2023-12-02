@@ -1,0 +1,11 @@
+# directories
+.next
+node_modules
+src/server/database/out
+tests/export
+tests/out
+
+# files
+.env.local
+next-env.d.ts
+pnpm-lock.yaml
